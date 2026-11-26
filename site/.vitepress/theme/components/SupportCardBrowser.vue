@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
-import { supportCardIndex, findSupportCard, typeIconPath } from '../../../data/supportCards'
+import {
+  supportCardIndex,
+  findSupportCard,
+  typeIconPath,
+  displayCardName,
+} from '../../../data/supportCards'
 import type { SupportCardDetail } from '../../../data/supportCards'
+import { findSkill } from '../../../data/skills'
 
 const filter = ref('')
 const typeFilter = ref('all')
@@ -18,8 +24,9 @@ const filtered = computed(() => {
     if (typeFilter.value !== 'all' && c.typeName !== typeFilter.value) return false
     if (!q) return true
     return (
+      displayCardName(c).toLowerCase().includes(q) ||
+      (c.enTitle || c.title).toLowerCase().includes(q) ||
       c.charaName.toLowerCase().includes(q) ||
-      c.title.toLowerCase().includes(q) ||
       String(c.id).includes(q) ||
       c.typeName.toLowerCase().includes(q)
     )
@@ -47,6 +54,10 @@ function uniqueLines(card: SupportCardDetail): string[] {
     if (typeof name === 'string' && name) lines.push(`${name}: ${val ?? ''}`)
   }
   return lines
+}
+
+function hintLabel(skillId: number, fallback: string): string {
+  return findSkill(String(skillId))?.name || fallback
 }
 
 onMounted(() => {
@@ -81,23 +92,23 @@ watch(selectedId, () => {
         >
           <img
             :src="`https://uma.guide/img/card/composite/tex_support_card_${c.id}.webp`"
-            :alt="c.charaName"
+            :alt="displayCardName(c)"
             class="sc-browser__thumb"
             loading="lazy"
           />
           <span class="sc-browser__item-meta">
             <img :src="typeIconPath(c.typeName)" class="chip-inline-icon" alt="" />
-            {{ c.charaName }}
+            {{ displayCardName(c) }}
           </span>
         </button>
       </div>
 
       <aside v-if="selected" class="sc-browser__detail">
-        <img :src="selected.art" :alt="selected.charaName" class="sc-browser__hero" />
-        <h2>{{ selected.charaName }}</h2>
+        <img :src="selected.art" :alt="displayCardName(selected)" class="sc-browser__hero" />
+        <h2>{{ displayCardName(selected) }}</h2>
         <p class="sc-browser__sub">
-          {{ selected.rarityDisplay }} · {{ selected.typeName }} · {{ selected.title }} · id
-          {{ selected.id }}
+          {{ selected.rarityDisplay }} · {{ selected.typeName }} ·
+          {{ selected.enTitle || selected.title }} · id {{ selected.id }}
         </p>
         <h3>Effects (EN)</h3>
         <ul>
@@ -115,7 +126,9 @@ watch(selectedId, () => {
         <template v-if="selected.skillHints?.length">
           <h3>Skill Hints</h3>
           <ul>
-            <li v-for="h in selected.skillHints" :key="h.skillId">{{ h.skillName }} ({{ h.skillId }})</li>
+            <li v-for="h in selected.skillHints" :key="h.skillId">
+              {{ hintLabel(h.skillId, h.skillName) }}
+            </li>
           </ul>
         </template>
         <p class="sc-browser__out">

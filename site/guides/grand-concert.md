@@ -39,11 +39,11 @@ upstream_synced: 2026-11-26
 ### Новые капы
 
 <div class="stat-row">
-  <div class="stat-box"><span class="stat-box__label">Speed</span><span class="stat-box__value">1600</span></div>
-  <div class="stat-box"><span class="stat-box__label">Stamina</span><span class="stat-box__value">1300</span></div>
-  <div class="stat-box"><span class="stat-box__label">Power</span><span class="stat-box__value">1300</span></div>
-  <div class="stat-box"><span class="stat-box__label">Guts</span><span class="stat-box__value">1500</span></div>
-  <div class="stat-box"><span class="stat-box__label">Wit</span><span class="stat-box__value">1300</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Speed" /></span><span class="stat-box__value">1600</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Stamina" /></span><span class="stat-box__value">1300</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Power" /></span><span class="stat-box__value">1300</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Guts" /></span><span class="stat-box__value">1500</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Wit" /></span><span class="stat-box__value">1300</span></div>
 </div>
 
 ::: info
@@ -62,11 +62,11 @@ $$
 
 | Facility | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
 | --- | --- | --- | --- | --- | --- |
-| Speed | Speed +8, Power +4, SP +4 / −19 Energy | Sp +9, Pw +4, SP +4 / −20 | Sp +10, Pw +4, SP +4 / −21 | Sp +11, Pw +5, SP +4 / −23 | Sp +12, Pw +6, SP +4 / −25 |
-| Stamina | Sta +8, Guts +6, SP +4 / −20 Energy | Sta +9, Gu +6, SP +4 / −21 | Sta +10, Gu +6, SP +4 / −22 | Sta +11, Gu +7, SP +4 / −24 | Sta +12, Gu +8, SP +4 / −26 |
-| Power | Sta +4, Power +9, SP +4 / −20 Energy | Sta +4, Pw +10, SP +4 / −21 | Sta +4, Pw +11, SP +4 / −22 | Sta +5, Pw +12, SP +4 / −24 | Sta +6, Pw +13, SP +4 / −26 |
-| Guts | Sp +2, Pw +2, Gu +7, SP +4 / −20 Energy | Sp +2, Pw +2, Gu +8, SP +4 / −21 | Sp +2, Pw +2, Gu +9, SP +4 / −22 | Sp +3, Pw +2, Gu +10, SP +4 / −24 | Sp +3, Pw +3, Gu +11, SP +4 / −26 |
-| Wit | Sp +2, Wit +6, SP +5 / **+5 Energy** | Sp +2, Wit +7, SP +5 / +5 | Sp +2, Wit +8, SP +5 / +5 | Sp +3, Wit +9, SP +5 / +5 | Sp +4, Wit +10, SP +5 / +5 |
+| <StatIcon stat="Speed" /> | <StatIcon stat="Speed" /> +8, <StatIcon stat="Power" /> +4, SP +4 / −19 Energy | Sp +9, Pw +4, SP +4 / −20 | Sp +10, Pw +4, SP +4 / −21 | Sp +11, Pw +5, SP +4 / −23 | Sp +12, Pw +6, SP +4 / −25 |
+| <StatIcon stat="Stamina" /> | <StatIcon stat="Stamina" /> +8, <StatIcon stat="Guts" /> +6, SP +4 / −20 Energy | Sta +9, Gu +6, SP +4 / −21 | Sta +10, Gu +6, SP +4 / −22 | Sta +11, Gu +7, SP +4 / −24 | Sta +12, Gu +8, SP +4 / −26 |
+| <StatIcon stat="Power" /> | <StatIcon stat="Stamina" /> +4, <StatIcon stat="Power" /> +9, SP +4 / −20 Energy | Sta +4, Pw +10, SP +4 / −21 | Sta +4, Pw +11, SP +4 / −22 | Sta +5, Pw +12, SP +4 / −24 | Sta +6, Pw +13, SP +4 / −26 |
+| <StatIcon stat="Guts" /> | <StatIcon stat="Speed" /> +2, <StatIcon stat="Power" /> +2, <StatIcon stat="Guts" /> +7, SP +4 / −20 Energy | Sp +2, Pw +2, Gu +8, SP +4 / −21 | Sp +2, Pw +2, Gu +9, SP +4 / −22 | Sp +3, Pw +2, Gu +10, SP +4 / −24 | Sp +3, Pw +3, Gu +11, SP +4 / −26 |
+| <StatIcon stat="Wit" /> | <StatIcon stat="Speed" /> +2, <StatIcon stat="Wit" /> +6, SP +5 / **+5 Energy** | Sp +2, Wit +7, SP +5 / +5 | Sp +2, Wit +8, SP +5 / +5 | Sp +3, Wit +9, SP +5 / +5 | Sp +4, Wit +10, SP +5 / +5 |
 
 ### Inheritance
 

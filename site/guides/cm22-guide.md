@@ -98,11 +98,11 @@ Late / End меньше выигрывают от early skills из‑за Pace-
 ## Рекомендуемые статы
 
 <div class="stat-row">
-  <div class="stat-box"><span class="stat-box__label">Speed</span><span class="stat-box__value">1600</span></div>
-  <div class="stat-box"><span class="stat-box__label">Stamina</span><span class="stat-box__value">650+</span></div>
-  <div class="stat-box"><span class="stat-box__label">Power</span><span class="stat-box__value">1200</span></div>
-  <div class="stat-box"><span class="stat-box__label">Guts</span><span class="stat-box__value">600+</span></div>
-  <div class="stat-box"><span class="stat-box__label">Wit</span><span class="stat-box__value">1000</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Speed" /></span><span class="stat-box__value">1600</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Stamina" /></span><span class="stat-box__value">650+</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Power" /></span><span class="stat-box__value">1200</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Guts" /></span><span class="stat-box__value">600+</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Wit" /></span><span class="stat-box__value">1000</span></div>
 </div>
 
 Несмотря на Mile, **Stamina** важна из‑за снега (больше расход HP). ~600 — baseline survival + порог Speed; лучше **650+** под плохой roll на коротком downhill. Верхняя вилка: 650 + white recovery или ~700 Stamina.

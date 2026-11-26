@@ -1,8 +1,10 @@
 import byIdJson from './characters-by-id.json'
+import charaNamesEnJson from './chara-names-en.json'
 
 export type CharacterEntry = {
   charaId: number
   charaName: string
+  enName?: string
   cardId?: number
   cardTitle: string
   voiceActor: string
@@ -34,6 +36,7 @@ export const enCharacterAliases: Record<
 }
 
 export const charactersById = byIdJson as Record<string, CharacterEntry>
+export const charaNamesEn = charaNamesEnJson as Record<string, string>
 
 export function findCharacter(nameOrId: string): {
   enName: string
@@ -43,11 +46,20 @@ export function findCharacter(nameOrId: string): {
   const key = nameOrId.trim().toLowerCase()
   if (/^\d+$/.test(key)) {
     const entry = charactersById[key]
-    if (!entry) return undefined
-    return { enName: entry.charaName, entry }
+    const enName = charaNamesEn[key] || entry?.enName || entry?.charaName
+    if (!entry && !enName) return undefined
+    return { enName: enName || key, entry }
   }
   const alias = enCharacterAliases[key]
-  if (!alias) return undefined
+  if (!alias) {
+    // Try reverse lookup from EN dict values
+    const hit = Object.entries(charaNamesEn).find(([, n]) => n.toLowerCase() === key)
+    if (hit) {
+      const entry = charactersById[hit[0]]
+      return { enName: hit[1], entry }
+    }
+    return undefined
+  }
   const entry = alias.charaId != null ? charactersById[String(alias.charaId)] : undefined
   return { enName: alias.enName, entry, supportCardId: alias.supportCardId }
 }

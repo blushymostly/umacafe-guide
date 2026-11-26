@@ -106,6 +106,46 @@ body {
   flex: none;
 }
 
+.stat-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  vertical-align: middle;
+}
+
+.stat-icon__img {
+  width: 1.25em;
+  height: 1.25em;
+  object-fit: contain;
+}
+
+.stat-icon__label {
+  font-weight: 600;
+}
+
+.skill-tip-head {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.skill-tip-icon {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: contain;
+}
+
+.skill-tip-desc {
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.skill-tip-desc :deep(b) {
+  color: var(--uc-accent);
+  font-weight: 650;
+}
+
 .chip-tooltip {
   width: min(22rem, 80vw);
   padding: 0.65rem 0.75rem;

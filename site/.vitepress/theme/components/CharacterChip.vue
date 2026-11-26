@@ -36,17 +36,15 @@ function hide() {
     <ChipTooltip ref="tip" :open="open">
       <template v-if="found">
         <strong>{{ found.enName }}</strong>
-        <div v-if="found.entry" class="chip-meta">
-          {{ found.entry.charaName }}
-          <span v-if="found.entry.cardTitle"> · {{ found.entry.cardTitle }}</span>
-        </div>
+        <div v-if="found.entry?.cardTitle" class="chip-meta">{{ found.entry.cardTitle }}</div>
         <div v-if="found.entry" class="chip-apt">
           Turf {{ found.entry.aptitudes.turf }} · Dirt {{ found.entry.aptitudes.dirt }} · Mile
           {{ found.entry.aptitudes.mile }} · Front {{ found.entry.aptitudes.front }} · Pace
           {{ found.entry.aptitudes.pace }}
         </div>
         <div v-else-if="support" class="chip-meta">
-          Support: {{ support.typeName }} {{ support.rarityDisplay }} {{ support.title }}
+          Support: {{ support.typeName }} {{ support.rarityDisplay }}
+          {{ support.enTitle || support.title }}
         </div>
         <div v-if="support?.art" class="chip-art-wrap">
           <img :src="support.art" :alt="found.enName" class="chip-art" />
