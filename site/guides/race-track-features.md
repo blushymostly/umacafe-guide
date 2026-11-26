@@ -17,7 +17,7 @@ upstream_synced: 2026-11-26
 На Upstream статья помечена как archived и может устареть. Ниже — перевод для контекста CM22 (в т.ч. якорь Surface Types / power penalty).
 :::
 
-Подраздел [Race Mechanics](https://uma.guide/guides/race-mechanics) (Outbound Link).
+Подраздел [Race Mechanics — посмотреть на uma.guide](https://uma.guide/guides/race-mechanics).
 
 На трассе есть несколько особенностей, которые влияют на Uma во время заезда.
 
@@ -27,17 +27,17 @@ upstream_synced: 2026-11-26
 
 Базовое Acceleration снижается с `0.0006` до `0.0004` на подъёме. Target Speed дополнительно уменьшается:
 
-\[
+$$
 \text{UphillDecrease} = \text{SlopePer} \cdot \frac{200}{\text{PowerStat}}
-\]
+$$
 
 ### Downhill
 
 На спуске Uma каждую секунду имеет шанс войти в <TermChip name="Downhill Mode" />:
 
-\[
+$$
 \text{EnterDownhill} = \text{FinalWit} \cdot 0.04
-\]
+$$
 
 В режиме:
 

@@ -27,7 +27,12 @@ upstream_synced: 2026-11-26
   <img src="/img/guides/article/grand_concert/gc_ingame.webp" alt="Scenario-linked: Light Hello, Agnes Tachyon, Silence Suzuka, Mihono Bourbon, Smart Falcon" />
 </div>
 
-Сценарно связанные персонажи (<TermChip name="Scenario Link" />): **Light Hello**, **Agnes Tachyon**, **Silence Suzuka**, **Mihono Bourbon**, **Smart Falcon**.
+Сценарно связанные персонажи (<TermChip name="Scenario Link" />):
+<CharacterChip name="Light Hello" />,
+<CharacterChip name="Agnes Tachyon" />,
+<CharacterChip name="Silence Suzuka" />,
+<CharacterChip name="Mihono Bourbon" />,
+<CharacterChip name="Smart Falcon" />.
 
 ## Статы
 
@@ -46,9 +51,9 @@ upstream_synced: 2026-11-26
 
 Статы выше 1200 также «половинятся» в race mechanics. Например, 1600 Speed считается как 1400 при расчёте Target Speed:
 
-\[
+$$
 1200 + \frac{1600 - 1200}{2} = 1400
-\]
+$$
 :::
 
 ### Базовые приросты Training
@@ -83,33 +88,21 @@ upstream_synced: 2026-11-26
 
 Из‑за высокого капа Speed и механики сценария рекомендуют колоду минимум с **2 Speed** и **2 Wit**. Оставшиеся слоты — **Light Hello** и flex Card.
 
-Интерактивные витрины карточек и card DB — Outbound на Upstream (мы их не клонируем): [раздел Decks на uma.guide](https://uma.guide/guides/grand-concert#decks).
+Витрины ниже — из локальной [базы Support Cards](/support-cards/). Полный Upstream-гайд и Tools: [посмотреть на uma.guide](https://uma.guide/guides/grand-concert#decks).
 
-<div class="deck-list">
-  <div class="deck-list__title">High Budget</div>
-  Kitasan Black · Agnes Tachyon · Maruzensky · Fine Motion · Mr. C.B. · Light Hello
-</div>
+<DeckShowcase title="High Budget" ids="30028,30101,30107,30010,30097,30052" />
 
-<div class="deck-list">
-  <div class="deck-list__title">Low Budget</div>
-  Agnes Tachyon · Curren Chan · Fine Motion · Daiwa Scarlet · Marvelous Sunday · Light Hello
-</div>
+<DeckShowcase title="Low Budget" ids="30101,20044,30010,20002,20015,30052" />
 
 Для более длинных дистанций может понадобиться Stamina-карта. Если не дотягиваете минимальную Stamina — берите или одалживайте **MLB Super Creek**.
 
-<div class="deck-list">
-  <div class="deck-list__title">Stamina High Budget</div>
-  Kitasan Black · Agnes Tachyon · El Condor Pasa · Fine Motion · Super Creek · Light Hello
-</div>
+<DeckShowcase title="Stamina High Budget" ids="30028,30101,20033,30010,30016,30052" />
 
-<div class="deck-list">
-  <div class="deck-list__title">Stamina Low Budget</div>
-  Kitasan Black · Curren Chan · Agnes Tachyon · Manhattan Cafe · Marvelous Sunday · Light Hello
-</div>
+<DeckShowcase title="Stamina Low Budget" ids="30028,20044,30101,20008,20015,30052" />
 
 ### Light Hello
 
-**Light Hello** — Scenario Link Pal Card для Grand Concert. Важна по трём причинам:
+<CharacterChip name="Light Hello" /> — Scenario Link Pal Card для Grand Concert. Важна по трём причинам:
 
 1. Как Pal даёт много Energy и Mood up, когда они нужны.
 2. Даёт hint на <SkillChip name="See Ya Later!" id="see-ya-later" /> — золотую версию <SkillChip name="Playtime's Over!" id="playtimes-over" />; скилл очень рекомендуется.
@@ -171,9 +164,9 @@ upstream_synced: 2026-11-26
 
 Число Points зависит от уровня Facility, числа Support Cards на Facility и Scenario-linked карт:
 
-\[
+$$
 \text{PerformanceToken} = \left\lfloor (S + F) \times 1.15^{C} + 2L \right\rfloor
-\]
+$$
 
 - **S** — база от типа Training (Wit = 5, остальные = 9)
 - **F** — уровень Facility (1, 2, …)
@@ -191,7 +184,7 @@ upstream_synced: 2026-11-26
 Два вида Lessons: **Techniques** и **Songs**.
 
 ::: tip
-Планируете покупки? Outbound-инструмент Upstream: [Grand Concert Song Calculator](https://uma.guide/grand-live-calculator/).
+Планируете покупки? Калькулятор Upstream: [посмотреть Song Calculator на uma.guide](https://uma.guide/grand-live-calculator/).
 :::
 
 ### Techniques
@@ -409,9 +402,9 @@ Scenario Spark называется **Grand Concert Scenario** и повышае
 | Senior year, Early April | Turf: 70 000 Fans · Dirt: 60 000 Fans · и 60 (green) bond с Akikawa |
 | Senior year, Early December | Turf: 120 000 Fans · Dirt: 80 000 Fans |
 
-## Outbound / что не портировали
+## Что смотреть на uma.guide
 
-- Интерактивные колоды и карточки Support: [Decks на Upstream](https://uma.guide/guides/grand-concert#decks)
-- [Grand Concert Song Calculator](https://uma.guide/grand-live-calculator/)
-- Character pages / Secret Events деталей Trainee: на Upstream
-- Полные card / skill DB Upstream
+- [Grand Concert на uma.guide](https://uma.guide/guides/grand-concert) (полный EN-оригинал)
+- [Song Calculator](https://uma.guide/grand-live-calculator/)
+- Character pages / Secret Events Trainee
+- Deck-builder / compare и прочие Tools

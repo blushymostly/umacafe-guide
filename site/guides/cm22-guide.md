@@ -115,9 +115,7 @@ Power penalty на Soft Dirt бьёт по Spurt — приоритетнее н
 
 ## Колоды и Support Cards
 
-Общие советы по колодам — в Dependency Guide [Grand Concert](/guides/grand-concert). Интерактивные витрины колод и detail карточек — Outbound на Upstream:
-
-- [Пример колод / карточки на uma.guide](https://uma.guide/guides/cm22-guide#recommended-decks-and-support-cards)
+Общие советы по колодам — в Dependency Guide [Grand Concert](/guides/grand-concert). Каталог Support Cards: [локальная база](/support-cards/). CM22-витрины Upstream: [посмотреть на uma.guide](https://uma.guide/guides/cm22-guide#recommended-decks-and-support-cards).
 
 Типичный скелет при 6–9★ Stamina Sparks: **3 SPD / 2 WIT + Light Hello**. Taiki Shuttle заметна (Power training, SP, Mile Maven для Front/Pace). Skill-карты (Daiichi Ruby → Lightning Surge; Daiwa Scarlet / K.S.Miracle → Neck and Neck) усложняют тренировку vs Leap Forward / Head-On из Legacies.
 

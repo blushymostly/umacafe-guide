@@ -4,6 +4,10 @@ import './custom.css'
 import TrackPreview from './components/TrackPreview.vue'
 import SkillChip from './components/SkillChip.vue'
 import TermChip from './components/TermChip.vue'
+import CharacterChip from './components/CharacterChip.vue'
+import SupportCardChip from './components/SupportCardChip.vue'
+import DeckShowcase from './components/DeckShowcase.vue'
+import SupportCardBrowser from './components/SupportCardBrowser.vue'
 import UpstreamCallout from './components/UpstreamCallout.vue'
 
 export default {
@@ -12,6 +16,10 @@ export default {
     app.component('TrackPreview', TrackPreview)
     app.component('SkillChip', SkillChip)
     app.component('TermChip', TermChip)
+    app.component('CharacterChip', CharacterChip)
+    app.component('SupportCardChip', SupportCardChip)
+    app.component('DeckShowcase', DeckShowcase)
+    app.component('SupportCardBrowser', SupportCardBrowser)
     app.component('UpstreamCallout', UpstreamCallout)
   },
 } satisfies Theme
