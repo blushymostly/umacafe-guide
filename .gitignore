@@ -111,3 +111,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Domain docs (local-only; not published — see docs/agents/domain.md)
+GLOSSARY.md
+docs/adr/
