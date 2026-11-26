@@ -1,0 +1,9 @@
+{
+  "name": "umacafe-guide",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --cwd site dev",
+    "build": "bun run --cwd site build",
+    "preview": "bun run --cwd site preview"
+  }
+}

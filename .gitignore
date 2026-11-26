@@ -119,3 +119,7 @@ docs/adr/
 # Local-only agent config (thin Matt Pocock setup; do not publish)
 AGENTS.md
 docs/agents/
+
+# VitePress
+site/.vitepress/dist
+site/.vitepress/cache
