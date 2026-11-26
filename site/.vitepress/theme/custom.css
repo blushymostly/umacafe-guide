@@ -247,3 +247,53 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+.type-icon,
+.token-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  margin-right: 0.15em;
+}
+
+.song-cover {
+  width: 48px;
+  height: auto;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+.technique-icon {
+  width: 56px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.deck-list {
+  margin: 0.5rem 0 1.25rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+}
+
+.deck-list__title {
+  font-weight: 650;
+  margin-bottom: 0.35rem;
+  color: var(--uc-accent);
+}
+
+.guide-video {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: 0.75rem auto;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-border);
+}
+
+.vp-doc table img.type-icon,
+.vp-doc table img.token-icon {
+  margin: 0 0.1rem;
+}
