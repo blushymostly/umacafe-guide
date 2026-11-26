@@ -17,7 +17,7 @@ features:
     details: Tokyo Dirt 1600m — ускорение, статы, колоды и рекомендуемые Uma.
     link: /guides/cm22-guide
   - title: Grand Concert
-    details: Сценарий, статы, уроки и шоп — опора для сборки колод в CM.
+    details: Полный перевод сценария — Points, Lessons, Songs, Concerts и rewards.
     link: /guides/grand-concert
   - title: Особенности трассы
     details: Склоны и Surface Types (штраф Power на Soft Dirt и др.).
