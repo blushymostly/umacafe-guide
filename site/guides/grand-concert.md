@@ -119,7 +119,7 @@ $$
 
 ## Performances
 
-Центр сценария — серия Concerts вплоть до титульного Grand Concert. Первый Concert в конце Junior Year, далее каждые полгода. Для <TermChip name="Great Success" /> нужно заполнить <TermChip name="Hype Level" /> через Lessons.
+Главная цель сценария это серия концертов вплоть до Grand Concert. Первый концерт проходит в конце Junior Year, далее каждые полгода. Для <TermChip name="Great Success" /> нужно заполнить <TermChip name="Hype Level" /> покупая уроки.
 
 <div class="guide-figure">
   <img src="/img/guides/article/grand_concert/gc_ui_hype_level.webp" alt="Hype Level — прогресс к следующему Concert" />
@@ -127,7 +127,7 @@ $$
 
 ## Points
 
-Валюта для Lessons — <TermChip name="Performance Points" />. Пять типов:
+Для покупки Уроков используется валюта <TermChip name="Performance Points" />. У неё пять типов:
 
 <img src="/icon/gl-tokens/utx_ico_performance_s_00.webp" class="token-icon" alt="" /> **Dance**,
 <img src="/icon/gl-tokens/utx_ico_performance_s_01.webp" class="token-icon" alt="" /> **Passion**,
@@ -141,13 +141,9 @@ $$
   <img src="/img/guides/article/grand_concert/gc_ui_point_reserved.webp" alt="Performance Points bar / reserved points UI" />
 </div>
 
-::: tip
-На Upstream картинка `gc_pointbar.png` в гайде сейчас отдаёт 404; выше — соседний UI-скрин (reserved points), который показывает ту же панель очков.
-:::
+Каждая тренировка имеет основной и дополнительный тип очков, которые она дает. Основной тип находится на ней с **60%** шансом, дополнительный с **30%**-тью, оставшиеся **10%** случайно делятся между тремя другими типами.
 
-У каждого Training есть primary и secondary тип Points. Primary выпадает **60%** времени, secondary — **30%**, оставшиеся **10%** случайно делятся между тремя другими типами.
-
-| Training | Primary | Secondary |
+| Тип тренировки | Основной тип | Дополнительный тип |
 | --- | --- | --- |
 | Speed | Dance | Visual |
 | Stamina | Passion | Vocal |
@@ -155,19 +151,19 @@ $$
 | Guts | Visual | Dance |
 | Wit | Composure | Passion |
 
-<TermChip name="Friendship Training" /> даёт **два** типа Points: один от выбранного Training, второй с высокой вероятностью — тот, которого меньше всего на начало хода.
+<TermChip name="Friendship Training" /> даёт **два** типа очков: один от выбранного типа тренировки, второй с высоким шансом будет тот тип, который имеет меньше всего очков в настоящий момент.
 
 <div class="guide-figure">
   <img src="/img/guides/article/grand_concert/gc_training_rainbow.webp" alt="Rainbow Training: Dance и Passion Performance Points" />
 </div>
 
-У Light Hello событие Training Together даёт **45%** шанс на +20 Points самого дефицитного типа.
+У <CharacterChip name="Light Hello" /> есть событие Training Together, которое даёт **45%** шанс на получения +20 очков того типа, которых у вас сейчас меньше всего.
 
-Начальный кап каждого типа Points — **200**.
+Начальное максимальное количество каждого типа очков — **200**.
 
 ### Расчёт Performance Points
 
-Число Points зависит от уровня Facility, числа Support Cards на Facility и Scenario-linked карт:
+Число очков зависит от уровня секции (Facility), числа карт поддержки на Facility и Scenario-linked карт:
 
 $$
 \text{PerformanceToken} = \left\lfloor (S + F) \times 1.15^{C} + 2L \right\rfloor
@@ -175,21 +171,21 @@ $$
 
 - **S** — база от типа Training (Wit = 5, остальные = 9)
 - **F** — уровень Facility (1, 2, …)
-- **C** — число Support Cards на Facility
+- **C** — число карт поддержки на Facility
 - **L** — число Scenario-link Cards на Facility
 
-Примеры: Speed на Level 1 без Supports → **10** Points. То же с двумя Supports → **13**. Если одна из них Scenario-linked → **15**.
+Примеры: Speed на Level 1 без карт поддержки → **10** очков. То же с двумя картами поддержки → **13**. Если одна из них Scenario-linked → **15**.
 
 ## Lessons
 
-В Shop предлагают **три** Lessons. Они не сгорают. Купили одну — появляются три новые.
+Магазин сценария предлагает **три** урока. Они не сгорают. Когда вы покупаете один урок сразу появится три новых.
 
-Если Points не хватает, Lesson можно **запланировать** (schedule): недостающее отображается на Point bar, и приходит уведомление, когда очков достаточно.
+Если очков на покупку не хватает, урок можно **запланировать** (schedule): недостающее количество отображается слева, когда очков достаточно появится уведомление об этом.
 
-Два вида Lessons: **Techniques** и **Songs**.
+Существует два типа уроков: **Техники (Techniques)** и **Песни (Songs)**.
 
 ::: tip
-Планируете покупки? Калькулятор Upstream: [посмотреть Song Calculator на uma.guide](https://uma.guide/grand-live-calculator/).
+Планируете покупки? Есть калькулятор песен на uma.guide: [посмотреть Song Calculator на uma.guide](https://uma.guide/grand-live-calculator/).
 :::
 
 ### Techniques
@@ -198,48 +194,48 @@ $$
   <img src="/img/guides/article/grand_concert/gc_ui_techniques.webp" alt="Techniques UI в Grand Concert Shop" />
 </div>
 
-Techniques дают <TermChip name="Mastery Bonus" /> — разовый эффект сразу при покупке: статы, Skill Points, Skill Hint или Energy.
+Techniques дают <TermChip name="Mastery Bonus" /> — этот эффект применяется сразу при покупке. Эффект может давать повышение характеристик, Skill Points, подсказки для навыков или энергия.
 
-| Icon | Effect | Cost | Priority |
+| Иконка | Эффект | Стоимость | Приоритет |
 | :---: | --- | --- | --- |
-| <img src="/img/guides/article/grand_concert/technique_energy.webp" class="technique-icon" alt="Energy technique" /> | Energy +20 / +30 / +40 | 25 / 30 / 35 Random Point Type | High Priority |
-| <img src="/img/guides/article/grand_concert/technique_skillpoints.webp" class="technique-icon" alt="Skill Points technique" /> | Skill Points +5 / +8 / +12 | 10 / 16 / 24 Random Point Type | Great Value |
-| <img src="/img/guides/article/grand_concert/technique_skillpoints.webp" class="technique-icon" alt="Stat technique" /> | Specific Stat +5 / +8 / +12 | 10 / 16 / 24 Stat Primary Point | Great Value |
-| <img src="/img/guides/article/grand_concert/technique_stat_skill.webp" class="technique-icon" alt="Stat + SP technique" /> | Stat +4 & SP +4 / Stat +6 & SP +6 | 10 Primary & 6 Secondary / 14 Primary & 10 Secondary | Great Value |
-| <img src="/img/guides/article/grand_concert/technique_two_stats.webp" class="technique-icon" alt="Two stats technique" /> | 2 Stats +4 / 2 Stats +6 | 16 Primary (8 каждого) / 24 Primary (12 каждого) | Great Value |
-| <img src="/img/guides/article/grand_concert/technique_skillhint.webp" class="technique-icon" alt="Skill Hint technique" /> | Skill Hint Lvl +1 / +2 / +3 | 15 / 25 / 35 Random Point Type | Low Priority |
+| <img src="/img/guides/article/grand_concert/technique_energy.webp" class="technique-icon" alt="Техника Energy" /> | Energy +20 / +30 / +40 | 25 / 30 / 35 Случайный тип очков | Высокий приоритет |
+| <img src="/img/guides/article/grand_concert/technique_skillpoints.webp" class="technique-icon" alt="Техника Skill Points" /> | Skill Points +5 / +8 / +12 | 10 / 16 / 24 Случайный тип очков | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/technique_skillpoints.webp" class="technique-icon" alt="Техника характеристики" /> | Конкретная характеристика +5 / +8 / +12 | 10 / 16 / 24 Основной тип характеристики | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/technique_stat_skill.webp" class="technique-icon" alt="Техника характеристика + SP" /> | Характеристика +4 и SP +4 / Характеристика +6 и SP +6 | 10 основной и 6 вторичный / 14 основной и 10 вторичный | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/technique_two_stats.webp" class="technique-icon" alt="Техника двух характеристик" /> | 2 характеристики +4 / 2 характеристики +6 | 16 основной (по 8 каждого) / 24 основной (по 12 каждого) | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/technique_skillhint.webp" class="technique-icon" alt="Техника Skill Hint" /> | Skill Hint ур. +1 / +2 / +3 | 15 / 25 / 35 Случайный тип очков | Низкий приоритет |
 
 ::: info
-Skill Hints зависят от Aptitude **A+** по Style и Distance вашей Uma. В Shop указано, к какому Style / Distance относится Lesson.
+Skill Hints зависят от Aptitude **A+** по Style и Distance вашей Умы. В магазине всегда подписано к какому стилю или дистанции относится урок.
 :::
 
 ::: tip
-Energy Techniques сильно рекомендуются — меньше Rest!
+Всегда обращайте внимание на техники, повышающие энергию. Они позволяют меньше отдыхать!
 :::
 
 ### Доступность Techniques
 
-Какие Techniques доступны, зависит от числа сыгранных Concerts.
+Наличие техник напрямую зависит от количества концертов, в которых вы поучаствовали.
 
-| Concerts | Techniques |
+| Концерты | Техники |
 | --- | --- |
-| Before First Concert | Skill Points +5, Stat +5 |
-| Before Fourth Concert | Skill Points +8, Stat +8, Stat +4 & SP +4, 2 Stats +4 |
-| Before Grand Concert | Skill Points +12, Stat +12, Stat +6 & SP +6, 2 Stats +6 |
+| Перед Первым Концертом | Skill Points +5, Stat +5 |
+| Перед Четвертым Концертом | Skill Points +8, Stat +8, Stat +4 & SP +4, 2 Stats +4 |
+| Перед Grand Concert | Skill Points +12, Stat +12, Stat +6 & SP +6, 2 Stats +6 |
 
 Skill Hints и Energy Techniques доступны **всегда**.
 
 ### Сколько Techniques нужно для Song
 
-После покупки определённого числа Techniques открывается выбор Songs. Число зависит от этапа карьеры и **сбрасывается после каждого Concert**.
+После покупки определённого числа техник открывается выбор Песни. Число зависит от этапа карьеры и **сбрасывается после каждого концерта**.
 
-| Concerts | Techniques required (последовательность) |
+| Концерт | Количество техник, необходимых для появления песни |
 | --- | --- |
-| Before 1st Concert | 1 → 2 → 3 → 4 → 4 → 2 → 3 |
-| Before 2nd–4th Concert | 2 → 2 → 2 → 4 → 5 → 2 → 2 |
-| Before Grand Concert | 2 → 2 → 2 → 4 → 3 → 2 → 2 |
+| Перед 1-ым Концертом | 1 → 2 → 3 → 4 → 4 → 2 → 3 |
+| Перед 2-ым до 4-ого Концерта  | 2 → 2 → 2 → 4 → 5 → 2 → 2 |
+| Перед Grand Concert | 2 → 2 → 2 → 4 → 3 → 2 → 2 |
 
-До первого Concert: 1 Technique → первый Song; ещё 2 → второй; ещё 3 → третий; ещё 4 → четвёртый.
+Перед вашим первым концертом вам нужно купить одну технику, чтобы открыть первую песню. Ещё две техники откроют вторую песню; ещё 3 → третью; ещё 4 → четвёртую.
 
 ### Songs
 
