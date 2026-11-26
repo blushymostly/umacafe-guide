@@ -111,3 +111,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Local-only domain docs (agent skills read these; do not publish)
+GLOSSARY.md
+docs/adr/
+
+# Local-only agent config (thin Matt Pocock setup; do not publish)
+AGENTS.md
+docs/agents/
