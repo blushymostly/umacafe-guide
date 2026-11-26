@@ -22,7 +22,7 @@ features:
       width: '960'
       height: '544'
     title: '<span class="uc-feature-tag">Champions Meeting</span>Aquarius Cup (CM22)'
-    details: Полный гайд для Champions Meeting №22, Tokyo Dirt 1600m...
+    details: 'Полный гайд для Champions Meeting #22, Tokyo Dirt 1600m...'
     link: /guides/cm22-guide
   - icon:
       src: /img/guides/thumb/grand-concert.webp
@@ -48,6 +48,7 @@ features:
   color: var(--vp-c-text-2);
   font-size: 14px;
   line-height: 20px;
+  text-align: center
 }
 </style>
 

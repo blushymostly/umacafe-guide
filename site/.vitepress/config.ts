@@ -16,8 +16,8 @@ function rewritePublicAssetUrls(html: string): string {
 }
 
 export default defineConfig({
-  title: 'UmaCafe Guide',
-  description: 'Русские переводы гайдов uma.guide для сообщества',
+  title: 'Гайды',
+  description: 'Гайды для Umamusume Pretty Derby на русском',
   lang: 'ru-RU',
   base,
   cleanUrls: true,
@@ -34,10 +34,10 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: false,
-    siteTitle: 'UmaCafe Guide',
+    siteTitle: 'UMA.CAFE',
     nav: [
       { text: 'Гайды', link: '/guides/cm22-guide' },
-      { text: 'Support Cards', link: '/support-cards/' },
+      { text: 'Карты поддержки', link: '/support-cards/' },
       { text: 'О сайте', link: '/about' },
       {
         text: 'uma.guide',
@@ -48,16 +48,16 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'Гайды (v1)',
+        text: 'Гайды',
         items: [
           { text: 'Aquarius Cup (CM22)', link: '/guides/cm22-guide' },
           { text: 'Grand Concert', link: '/guides/grand-concert' },
-          { text: 'Особенности трассы', link: '/guides/race-track-features' },
+          { text: 'Особенности трасс', link: '/guides/race-track-features' },
         ],
       },
       {
         text: 'Данные',
-        items: [{ text: 'Support Cards', link: '/support-cards/' }],
+        items: [{ text: 'Карты поддержки', link: '/support-cards/' }],
       },
     ],
     socialLinks: [],
@@ -70,8 +70,8 @@ export default defineConfig({
     sidebarMenuLabel: 'Меню',
     footer: {
       message:
-        'Фанатский перевод гайдов <a href="https://uma.guide/" target="_blank" rel="noopener">uma.guide</a>. Не связан с Cygames и Upstream.',
-      copyright: 'Код сайта — GPL-3.0. Текст гайдов принадлежит авторам Upstream.',
+        'Переведенные гайды с сайта <a href="https://uma.guide/" target="_blank" rel="noopener">uma.guide</a>. Сайт не связан с Cygames и uma.guide.',
+      copyright: 'Код сайта — GPL-3.0. Текст гайдов принадлежит авторам с uma.guide.',
     },
     search: {
       provider: 'local',
