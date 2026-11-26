@@ -8,6 +8,9 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   appearance: true,
+  markdown: {
+    math: true,
+  },
   head: [
     ['meta', { name: 'theme-color', content: '#1d150f' }],
   ],
@@ -16,6 +19,7 @@ export default defineConfig({
     siteTitle: 'UmaCafe Guide',
     nav: [
       { text: 'Гайды', link: '/guides/cm22-guide' },
+      { text: 'Support Cards', link: '/support-cards/' },
       { text: 'О сайте', link: '/about' },
       {
         text: 'uma.guide',
@@ -32,6 +36,10 @@ export default defineConfig({
           { text: 'Grand Concert', link: '/guides/grand-concert' },
           { text: 'Особенности трассы', link: '/guides/race-track-features' },
         ],
+      },
+      {
+        text: 'Данные',
+        items: [{ text: 'Support Cards', link: '/support-cards/' }],
       },
     ],
     socialLinks: [],

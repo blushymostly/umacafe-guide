@@ -2,6 +2,8 @@ export type SkillEntry = {
   id: string
   name: string
   description: string
+  /** Upstream /icon/skill/utx_ico_skill_{iconId}.webp when known */
+  iconId?: number
 }
 
 /** Scoped Skill Data: only skills referenced in published v1 Guides. */
@@ -32,6 +34,7 @@ export const skills: Record<string, SkillEntry> = {
     id: 'forward-march',
     name: 'Forward, March!',
     description: 'Случайный accel; доступен всем стилям через Grand Concert Shop.',
+    iconId: 20142,
   },
   acceleration: {
     id: 'acceleration',
@@ -118,68 +121,81 @@ export const skills: Record<string, SkillEntry> = {
     name: 'See Ya Later!',
     description:
       'Золотая версия Playtime\'s Over!; hint от Light Hello. Сильно рекомендуется в Grand Concert.',
+    iconId: 20012,
   },
   'playtimes-over': {
     id: 'playtimes-over',
     name: "Playtime's Over!",
     description: 'Белая версия See Ya Later!; mid/late velocity при выполнении условий.',
+    iconId: 20011,
   },
   'i-wanna-win-with-you': {
     id: 'i-wanna-win-with-you',
     name: 'I Wanna Win with You',
     description:
       'Золотой Scenario Skill Grand Concert: при ≥18 Songs к Girls\' Legend U. Усиливает позднюю часть заезда.',
+    iconId: 20152,
   },
   'halfway-to-a-dream': {
     id: 'halfway-to-a-dream',
     name: 'Halfway to a Dream',
     description:
       'Белый Scenario Skill, если <18 Songs к Girls\' Legend U. Speed + accel во второй половине при ≤6-м месте.',
+    iconId: 20151,
   },
   'full-speed': {
     id: 'full-speed',
     name: 'Full Speed!',
     description: 'Золотой hint Smart Falcon (Scenario reward при ≥16 Songs).',
+    iconId: 20012,
   },
   'full-tilt': {
     id: 'full-tilt',
     name: 'Full Tilt',
     description: 'Белая версия Full Speed! без Scenario-linked Smart Falcon.',
+    iconId: 20011,
   },
   concentration: {
     id: 'concentration',
     name: 'Concentration',
     description: 'Золотой hint Mihono Bourbon (Scenario reward).',
+    iconId: 20062,
   },
   focus: {
     id: 'focus',
     name: 'Focus',
     description: 'Белая версия Concentration.',
+    iconId: 20061,
   },
   'come-what-may': {
     id: 'come-what-may',
     name: 'Come What May',
     description: 'Золотой hint Agnes Tachyon (Scenario reward).',
+    iconId: 20012,
   },
   'all-ive-got': {
     id: 'all-ive-got',
     name: "All I've Got",
     description: 'Белая версия Come What May.',
+    iconId: 20011,
   },
   trackblazer: {
     id: 'trackblazer',
     name: 'Trackblazer',
     description: 'Золотой hint Silence Suzuka (Scenario reward).',
+    iconId: 20022,
   },
   'rosy-outlook': {
     id: 'rosy-outlook',
     name: 'Rosy Outlook',
     description: 'Белая версия Trackblazer.',
+    iconId: 20021,
   },
   'lane-legerdemain': {
     id: 'lane-legerdemain',
     name: 'Lane Legerdemain',
     description: 'Золотой hint без Scenario-linked персонажей (Scenario reward ≥16 Songs).',
+    iconId: 20052,
   },
 }
 
