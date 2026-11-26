@@ -1,15 +1,33 @@
 import { defineConfig } from 'vitepress'
 
+const base = '/umacafe-guide/'
+
+/** Raw HTML `<img src="/icon/...">` / `<video src="/img/...">` in markdown is not
+ *  rewritten by VitePress (only `![](/x)` is). Prefix public asset URLs with base. */
+function rewritePublicAssetUrls(html: string): string {
+  const baseNoSlash = base.endsWith('/') ? base.slice(0, -1) : base
+  return html.replace(
+    /\b(src|poster|href)="(\/(?:icon|img)\/[^"]+)"/g,
+    (match, attr: string, path: string) => {
+      if (path.startsWith(base) || path.startsWith(`${baseNoSlash}/`)) return match
+      return `${attr}="${baseNoSlash}${path}"`
+    },
+  )
+}
+
 export default defineConfig({
   title: 'UmaCafe Guide',
   description: 'Русские переводы гайдов uma.guide для сообщества',
   lang: 'ru-RU',
-  base: '/umacafe-guide/',
+  base,
   cleanUrls: true,
   lastUpdated: true,
   appearance: true,
   markdown: {
     math: true,
+  },
+  transformHtml(code) {
+    return rewritePublicAssetUrls(code)
   },
   head: [
     ['meta', { name: 'theme-color', content: '#1d150f' }],

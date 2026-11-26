@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { withBase } from 'vitepress'
 
 const props = defineProps<{
   /** Speed | Stamina | Power | Guts | Wit */
@@ -21,7 +22,7 @@ const STAT_FILE: Record<string, string> = {
 const key = computed(() => props.stat.trim().toLowerCase())
 const src = computed(() => {
   const file = STAT_FILE[key.value]
-  return file ? `/icon/stat/${file}` : null
+  return file ? withBase(`/icon/stat/${file}`) : null
 })
 const display = computed(() => {
   const map: Record<string, string> = {

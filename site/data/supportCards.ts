@@ -1,5 +1,6 @@
 import indexJson from './support-cards-index.json'
 import byIdJson from './support-cards-by-id.json'
+import { publicAsset } from './publicAsset'
 
 export type SupportCardIndexEntry = {
   id: number
@@ -52,5 +53,5 @@ export function typeIconPath(typeName: string): string {
     Group: 'group',
   }
   const key = map[typeName] ?? 'speed'
-  return `/icon/type/${key}.svg`
+  return publicAsset(`/icon/type/${key}.svg`)
 }
