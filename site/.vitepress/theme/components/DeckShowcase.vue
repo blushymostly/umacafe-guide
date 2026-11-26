@@ -33,16 +33,7 @@ function cardHref(id: number) {
         :href="cardHref(card!.id)"
       >
         <img :src="card!.art" :alt="displayCardName(card!)" class="deck-showcase__art" loading="lazy" />
-        <div class="deck-showcase__caption">
-          <img :src="typeIconPath(card!.typeName)" class="chip-inline-icon" alt="" />
-          <span>{{ displayCardName(card!) }}</span>
-        </div>
       </a>
     </div>
-    <p class="deck-showcase__note">
-      Карточки: metadata на UmaCafe Guide; арт с
-      <a href="https://uma.guide/support-cards/" target="_blank" rel="noopener">uma.guide</a>
-      (посмотреть на uma.guide).
-    </p>
   </div>
 </template>

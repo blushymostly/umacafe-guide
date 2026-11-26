@@ -9,13 +9,12 @@ defineProps<{
 <template>
   <aside class="upstream-callout">
     <div>
-      Фанатский перевод Upstream-гайда
+      Перевод гайда с uma.guide
       <template v-if="title"> «{{ title }}»</template>.
     </div>
     <div>
       Оригинал:
       <a :href="url" target="_blank" rel="noopener">{{ url }}</a>
     </div>
-    <div>Синхронизация с Upstream: <code>{{ synced }}</code></div>
   </aside>
 </template>

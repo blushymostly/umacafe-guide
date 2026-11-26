@@ -277,6 +277,10 @@ body {
   font-weight: 600;
 }
 
+.math-left mjx-container[display="true"] {
+  text-align: left !important;
+}
+
 .skill-chip,
 .term-chip,
 .character-chip,
@@ -468,25 +472,57 @@ body {
 }
 
 .stat-box {
-  padding: 0.65rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
   border-radius: 8px;
-  background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-border);
+  border: 1px solid var(--uc-red);
+  background: var(--uc-bg);
   text-align: center;
 }
 
 .stat-box__label {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--vp-c-text-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.4rem;
+  background: var(--uc-red);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.stat-box__label .stat-icon__label,
+.stat-box__label b {
+  font-weight: 700;
+  color: inherit;
+}
+
+.stat-box__label .stat-icon__img {
+  width: 1em;
+  height: 1em;
 }
 
 .stat-box__value {
   display: block;
-  margin-top: 0.2rem;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--uc-accent);
+  padding: 0.55rem 0.4rem 0.6rem;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--uc-fg);
+  line-height: 1.2;
+}
+
+html:not(.dark) .stat-box {
+  background: var(--vp-c-bg-elv);
+  border-color: var(--uc-red);
+}
+
+html:not(.dark) .stat-box__value {
+  color: var(--vp-c-text-1);
 }
 
 @media (max-width: 640px) {

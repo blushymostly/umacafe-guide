@@ -10,6 +10,7 @@ import SupportCardChip from './components/SupportCardChip.vue'
 import DeckShowcase from './components/DeckShowcase.vue'
 import SupportCardBrowser from './components/SupportCardBrowser.vue'
 import StatIcon from './components/StatIcon.vue'
+import TypeIcon from './components/TypeIcon.vue'
 import UpstreamCallout from './components/UpstreamCallout.vue'
 
 export default {
@@ -23,6 +24,7 @@ export default {
     app.component('DeckShowcase', DeckShowcase)
     app.component('SupportCardBrowser', SupportCardBrowser)
     app.component('StatIcon', StatIcon)
+    app.component('TypeIcon', TypeIcon)
     app.component('UpstreamCallout', UpstreamCallout)
   },
 } satisfies Theme

@@ -1,5 +1,5 @@
 ---
-title: Grand Concert
+title: Grand Concert Guide
 description: Полный перевод гайда по сценарию Grand Concert (Performance Points, Lessons, Songs, Concerts)
 upstream_url: https://uma.guide/guides/grand-concert
 upstream_synced: 2026-11-26
@@ -10,24 +10,24 @@ upstream_synced: 2026-11-26
 <UpstreamCallout
   url="https://uma.guide/guides/grand-concert"
   synced="2026-11-26"
-  title="Grand Concert Guide"
+  title="Grand Concert"
 />
 
 <div class="guide-figure">
   <img src="/img/guides/article/grand_concert/gc_logo.webp" alt="Grand Concert logo" />
 </div>
 
-**Grand Concert** — четвёртый Scenario. Упор на Training, набор <TermChip name="Performance Points" /> для покупки Lessons и серию промо-концертов вплоть до финального Grand Concert.
+**Grand Concert** — это четвертый сценарий. Он фокусируется на тренировках, собирании <TermChip name="Performance Points" /> для покупки уроков и участии в промо-концертах вплоть до финального Grand Concert.
 
 ::: info
-В отличие от Trackblazer, здесь снова есть Character Secret Events. Смотрите страницу персонажа вашего Trainee на Upstream.
+В отличие от Trackblazer, этот сценарий возвращает механику секретных эвентов. Детали на странице Персонажей!
 :::
 
 <div class="guide-figure">
-  <img src="/img/guides/article/grand_concert/gc_ingame.webp" alt="Scenario-linked: Light Hello, Agnes Tachyon, Silence Suzuka, Mihono Bourbon, Smart Falcon" />
+  <img src="/img/guides/article/grand_concert/gc_ingame.webp" alt="Персонажи связанные со сценарием: Light Hello, Agnes Tachyon, Silence Suzuka, Mihono Bourbon, Smart Falcon" />
 </div>
 
-Сценарно связанные персонажи (<TermChip name="Scenario Link" />):
+Персонажи, связанные со сценарием (<TermChip name="Scenario Link" />):
 <CharacterChip name="Light Hello" />,
 <CharacterChip name="Agnes Tachyon" />,
 <CharacterChip name="Silence Suzuka" />,
@@ -36,80 +36,85 @@ upstream_synced: 2026-11-26
 
 ## Статы
 
-### Новые капы
+### Новый максимальный порог характеристик
 
 <div class="stat-row">
-  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Speed" /></span><span class="stat-box__value">1600</span></div>
-  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Stamina" /></span><span class="stat-box__value">1300</span></div>
-  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Power" /></span><span class="stat-box__value">1300</span></div>
-  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Guts" /></span><span class="stat-box__value">1500</span></div>
-  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Wit" /></span><span class="stat-box__value">1300</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Speed" /><b>Speed</b></span><span class="stat-box__value">1600</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Stamina" /><b>Stamina</b></span><span class="stat-box__value">1300</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Power" /><b>Power</b></span><span class="stat-box__value">1300</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Guts" /><b>Guts</b></span><span class="stat-box__value">1500</span></div>
+  <div class="stat-box"><span class="stat-box__label"><StatIcon stat="Wit" /><b>Wit</b></span><span class="stat-box__value">1300</span></div>
 </div>
 
 ::: info
-Любой прирост **выше 1200** режется вдвое.
+Обратите внимание, что любой прирост характеристики **выше 1200** режется вдвое.
 
-Статы выше 1200 также «половинятся» в race mechanics. Например, 1600 Speed считается как 1400 при расчёте Target Speed:
+Статы выше 1200 также «половинятся» в гонках. Например, 1600 Speed считается как 1400:
+
+<div class="math-left">
 
 $$
 1200 + \frac{1600 - 1200}{2} = 1400
 $$
+
+</div>
+
+при расчёте целевой скорости в забеге.
 :::
 
-### Базовые приросты Training
+### Базовые приросты характеристик
 
-Приросты (особенно Skill Points) выше, чем в базовых сценариях. Как в URA Finale, уровень Facility растёт после **четырёх** тренировок на объекте.
+Увеличили прирост характеристик от тренировок, особенно количество очков навыков (Skill Points). Как и в URA Finale, уровень тренировочной секции (Facility) растёт после четырех тренировок на этом типе секции.
 
 | Facility | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
 | --- | --- | --- | --- | --- | --- |
-| <StatIcon stat="Speed" /> | <StatIcon stat="Speed" /> +8, <StatIcon stat="Power" /> +4, SP +4 / −19 Energy | Sp +9, Pw +4, SP +4 / −20 | Sp +10, Pw +4, SP +4 / −21 | Sp +11, Pw +5, SP +4 / −23 | Sp +12, Pw +6, SP +4 / −25 |
-| <StatIcon stat="Stamina" /> | <StatIcon stat="Stamina" /> +8, <StatIcon stat="Guts" /> +6, SP +4 / −20 Energy | Sta +9, Gu +6, SP +4 / −21 | Sta +10, Gu +6, SP +4 / −22 | Sta +11, Gu +7, SP +4 / −24 | Sta +12, Gu +8, SP +4 / −26 |
-| <StatIcon stat="Power" /> | <StatIcon stat="Stamina" /> +4, <StatIcon stat="Power" /> +9, SP +4 / −20 Energy | Sta +4, Pw +10, SP +4 / −21 | Sta +4, Pw +11, SP +4 / −22 | Sta +5, Pw +12, SP +4 / −24 | Sta +6, Pw +13, SP +4 / −26 |
-| <StatIcon stat="Guts" /> | <StatIcon stat="Speed" /> +2, <StatIcon stat="Power" /> +2, <StatIcon stat="Guts" /> +7, SP +4 / −20 Energy | Sp +2, Pw +2, Gu +8, SP +4 / −21 | Sp +2, Pw +2, Gu +9, SP +4 / −22 | Sp +3, Pw +2, Gu +10, SP +4 / −24 | Sp +3, Pw +3, Gu +11, SP +4 / −26 |
-| <StatIcon stat="Wit" /> | <StatIcon stat="Speed" /> +2, <StatIcon stat="Wit" /> +6, SP +5 / **+5 Energy** | Sp +2, Wit +7, SP +5 / +5 | Sp +2, Wit +8, SP +5 / +5 | Sp +3, Wit +9, SP +5 / +5 | Sp +4, Wit +10, SP +5 / +5 |
+| <StatIcon stat="Speed" :label="false" /><b>Speed</b> | <TypeIcon type="Speed" /> +8, <TypeIcon type="Power" /> +4, SP +4 / −19 Energy | <TypeIcon type="Speed" /> +9, <TypeIcon type="Power" /> +4, SP +4 / −20 | <TypeIcon type="Speed" /> +10, <TypeIcon type="Power" /> +4, SP +4 / −21 Energy | <TypeIcon type="Speed" /> +11, <TypeIcon type="Power" /> +5, SP +4 / −23 Energy | <TypeIcon type="Speed" /> +12, <TypeIcon type="Power" /> +6, SP +4 / −25 Energy |
+| <StatIcon stat="Stamina" :label="false" /><b>Stamina</b> | <TypeIcon type="Stamina" /> +8, <TypeIcon type="Guts" /> +6, SP +4 / −20 Energy | <TypeIcon type="Stamina" /> +9, <TypeIcon type="Guts" /> +6, SP +4 / −21 | <TypeIcon type="Stamina" /> +10, <TypeIcon type="Guts" /> +6, SP +4 / −22 | <TypeIcon type="Stamina" /> +11, <TypeIcon type="Guts" /> +7, SP +4 / −24 | <TypeIcon type="Stamina" /> +12, <TypeIcon type="Guts" /> +8, SP +4 / −26 |
+| <StatIcon stat="Power" :label="false" /><b>Power</b> | <TypeIcon type="Stamina" /> +4, <TypeIcon type="Power" /> +9, SP +4 / −20 Energy | <TypeIcon type="Stamina" /> +4, <TypeIcon type="Power" /> +10, SP +4 / −21 | <TypeIcon type="Stamina" /> +4, <TypeIcon type="Power" /> +11, SP +4 / −22 | <TypeIcon type="Stamina" /> +5, <TypeIcon type="Power" /> +12, SP +4 / −24 | <TypeIcon type="Stamina" /> +6, <TypeIcon type="Power" /> +13, SP +4 / −26 |
+| <StatIcon stat="Guts" :label="false" /><b>Guts</b> | <TypeIcon type="Speed" /> +2, <TypeIcon type="Power" /> +2, <TypeIcon type="Guts" /> +7, SP +4 / −20 Energy | <TypeIcon type="Speed" /> +2, <TypeIcon type="Power" /> +2, <TypeIcon type="Guts" /> +8, SP +4 / −21 | <TypeIcon type="Speed" /> +2, <TypeIcon type="Power" /> +2, <TypeIcon type="Guts" /> +9, SP +4 / −22 | <TypeIcon type="Speed" /> +3, <TypeIcon type="Power" /> +2, <TypeIcon type="Guts" /> +10, SP +4 / −24 | <TypeIcon type="Speed" /> +3, <TypeIcon type="Power" /> +3, <TypeIcon type="Guts" /> +11, SP +4 / −26 |
+| <StatIcon stat="Wit" :label="false" /><b>Wit</b> | <TypeIcon type="Speed" /> +2, <TypeIcon type="Wit" /> +6, SP +5 / **+5 Energy** | <TypeIcon type="Speed" /> +2, <TypeIcon type="Wit" /> +7, SP +5 / +5 | <TypeIcon type="Speed" /> +2, <TypeIcon type="Wit" /> +8, SP +5 / +5 | <TypeIcon type="Speed" /> +3, <TypeIcon type="Wit" /> +9, SP +5 / +5 | <TypeIcon type="Speed" /> +4, <TypeIcon type="Wit" /> +10, SP +5 / +5 |
 
-### Inheritance
+### Наследование
 
-Синие Sparks поднимают капы в зависимости от рейтинга. Uncap на старте карьеры:
+Синие спарки поднимают предел статов в зависимости от рейтинга спарка. На старте карьеры предел поднимается следующим образом:
 
-| Spark Rating | Stat Uncap |
-| ---: | ---: |
+| Рейтинг Спарка | Изменение предела характеристики |
+| :---: | :---: |
 | 1★ | +4 |
 | 2★ | +9 |
 | 3★ | +16 |
 | 6★ | +32 |
 | 9★ | +48 |
 
-На Inheritance Events uncap’ы случайны.
+На во время эвентов Вдохновения предел характеристик увеличивается случайно.
 
-Наследование Unique Skill родителя через green Sparks тоже поднимает капы (**без** прямых статов), по бонусам родителя. Пример: у Oguri Cap бонусы Speed и Power — inheriting **Triumphant Pulse** даёт uncap по этим двум статам. Таким способом поднимаются **не больше трёх** капов, даже если у родителя четыре разных бонуса.
+Наследование Уникального навыка родителя через зеленые спарки тоже поднимает предел характеристик (**но не дает** сами очки характеристик), в зависимости от бонусов родителя. Пример: у Oguri Cap есть бонус к Speed и Power — если при вдохновении передается **Triumphant Pulse**, то предел повысится именно по этим двум статам. Таким способом поднимаются **не больше трёх** пределов для характеристик, даже если у родителя четыре разных бонуса.
 
 ## Колоды
 
-Из‑за высокого капа Speed и механики сценария рекомендуют колоду минимум с **2 Speed** и **2 Wit**. Оставшиеся слоты — **Light Hello** и flex Card.
+Из‑за высокого капа <TypeIcon type="Speed" />Speed и механики сценария рекомендуют колоду минимум с **2 <TypeIcon type="Speed" /> Speed** и **2 <TypeIcon type="Wit" /> Wit**. Оставшиеся слоты занимают <CharacterChip name="Light Hello" /> и любая другая карта.
 
-Витрины ниже — из локальной [базы Support Cards](/support-cards/). Полный Upstream-гайд и Tools: [посмотреть на uma.guide](https://uma.guide/guides/grand-concert#decks).
+<DeckShowcase title="Высокий бюджет" ids="30028,30101,30107,30010,30097,30052" />
 
-<DeckShowcase title="High Budget" ids="30028,30101,30107,30010,30097,30052" />
+<DeckShowcase title="Низкий бюджет" ids="30101,20044,30010,20002,20015,30052" />
 
-<DeckShowcase title="Low Budget" ids="30101,20044,30010,20002,20015,30052" />
+Для более длинных дистанций может понадобиться карта типа <TypeIcon type="Stamina" /> Stamina. Если у вас проблемы с достижением минимально требуемой <TypeIcon type="Stamina" /> Стамины, очень рекомендуем использовать или позаимствовать у друзей MLB <SupportCardChip id="30016" />. 
 
-Для более длинных дистанций может понадобиться Stamina-карта. Если не дотягиваете минимальную Stamina — берите или одалживайте **MLB Super Creek**.
+<DeckShowcase title="Высокий бюджет на выносливость" ids="30028,30101,20033,30010,30016,30052" />
 
-<DeckShowcase title="Stamina High Budget" ids="30028,30101,20033,30010,30016,30052" />
-
-<DeckShowcase title="Stamina Low Budget" ids="30028,20044,30101,20008,20015,30052" />
+<DeckShowcase title="Низкий бюджет на выносливость" ids="30028,20044,30101,20008,20015,30052" />
 
 ### Light Hello
 
-<CharacterChip name="Light Hello" /> — Scenario Link Pal Card для Grand Concert. Важна по трём причинам:
 
-1. Как Pal даёт много Energy и Mood up, когда они нужны.
-2. Даёт hint на <SkillChip name="See Ya Later!" id="see-ya-later" /> — золотую версию <SkillChip name="Playtime's Over!" id="playtimes-over" />; скилл очень рекомендуется.
-3. Помогает с механикой сценария: при тренировке с ней есть шанс получить **+20 Performance Points** того типа, которого у вас меньше всего. Эти очки заметно усиливают прогон.
+<CharacterChip name="Light Hello" /> это карта "приятеля" для Grand Concert. Она важна по трём причинам:
+
+1. Будучи картой приятеля, она дает много Энергии и повышает настроение когда они вам понадобятся.
+2. Даёт подсказку на <SkillChip name="See Ya Later!" id="see-ya-later" /> — золотую версию <SkillChip name="Playtime's Over!" id="playtimes-over" />; и этот навык очень сильный.
+3. <SupportCardChip id="30052" /> помогает с ключевой механикой сценария: при тренировке с ней есть шанс получить **+20 Performance Points** того типа, которого у вас меньше всего. Эти очки заметно усиляют забег.
 
 ::: info
-Всё это работает уже на **LB0**. На LB1 / LB2 она получает +5% / ещё +5% Training Effectiveness — становится ещё полезнее.
+Всё это работает уже на **LB0**. На LB1 она получает +5% Training Effectiveness и ещё 5% на LB2, что делает карту ещё полезнее.
 :::
 
 ## Performances
