@@ -12,5 +12,8 @@
     "markdown-it-mathjax3": "^4",
     "vitepress": "^1.6.4",
     "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@fontsource-variable/onest": "^5.3.1"
   }
 }

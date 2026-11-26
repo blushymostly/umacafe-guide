@@ -1,5 +1,6 @@
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import '@fontsource-variable/onest'
 import './custom.css'
 import TrackPreview from './components/TrackPreview.vue'
 import SkillChip from './components/SkillChip.vue'

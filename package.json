@@ -5,5 +5,8 @@
     "dev": "bun run --cwd site dev",
     "build": "bun run --cwd site build",
     "preview": "bun run --cwd site preview"
+  },
+  "dependencies": {
+    "site": "^2.60.4"
   }
 }

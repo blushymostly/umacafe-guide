@@ -28,14 +28,36 @@
   --vp-c-gutter: #3d3024;
   --vp-c-border: #4a3b2d;
 
+  --vp-font-family-base: 'Onest Variable', Onest, ui-sans-serif, system-ui, sans-serif;
+
+  --vp-button-brand-border: transparent;
   --vp-button-brand-bg: var(--uc-accent);
+  --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-bg: #f0b56f;
   --vp-button-brand-text: #1d150f;
   --vp-button-brand-hover-text: #1d150f;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-bg: #c8893f;
+  --vp-button-brand-active-text: #1d150f;
 
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(120deg, var(--uc-accent), var(--uc-yellow));
-  --vp-home-hero-image-background-image: radial-gradient(ellipse at center, rgba(224, 161, 92, 0.28), transparent 65%);
+  /* Quiet coffee secondary — not cold grey-blue */
+  --vp-button-alt-border: color-mix(in srgb, var(--vp-c-text-1) 10%, transparent);
+  --vp-button-alt-text: var(--vp-c-text-1);
+  --vp-button-alt-bg: var(--vp-c-bg-soft);
+  --vp-button-alt-hover-border: color-mix(in srgb, var(--vp-c-text-1) 16%, transparent);
+  --vp-button-alt-hover-text: var(--vp-c-text-1);
+  --vp-button-alt-hover-bg: var(--vp-c-bg-elv);
+  --vp-button-alt-active-border: color-mix(in srgb, var(--vp-c-text-1) 16%, transparent);
+  --vp-button-alt-active-text: var(--vp-c-text-1);
+  --vp-button-alt-active-bg: var(--vp-c-bg-alt);
+
+  /* Solid name — no gradient text; accent lives on the primary CTA */
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-home-hero-name-background: transparent;
+  --vp-home-hero-image-background-image: none;
+  /* Subtle coffee lift off dark bg — close to bg, still warm */
+  --uc-hero-silhouette: color-mix(in srgb, var(--uc-bg) 55%, #34281c);
+  --uc-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .dark {
@@ -66,10 +88,179 @@ html:not(.dark) {
   --vp-c-border: #cfc0aa;
   --vp-c-gutter: #d9cbb8;
   --vp-button-brand-text: #1d150f;
+  --vp-button-alt-border: color-mix(in srgb, var(--vp-c-text-1) 10%, transparent);
+  --vp-button-alt-bg: #efe4d4;
+  --vp-button-alt-hover-bg: #eadfcf;
+  --vp-button-alt-active-bg: #e4d6c4;
+  /* Darker & warmer than cream — latte brown, not cool gray */
+  --uc-hero-silhouette: color-mix(in srgb, #f0e2d0 45%, #a67c52);
 }
 
 body {
-  font-family: 'Segoe UI', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--vp-font-family-base);
+  font-optical-sizing: auto;
+}
+
+/* —— Home hero —— */
+.VPHomeHero .image {
+  justify-content: flex-end;
+}
+
+@media (min-width: 960px) {
+  .VPHomeHero .image {
+    margin-right: -2.5rem;
+    transform: translateX(1.5rem);
+  }
+}
+
+.VPHomeHero .image-bg {
+  display: none;
+}
+
+.VPHomeHero .image-container {
+  position: relative;
+  width: min(260px, 55vw);
+  height: min(420px, 88vw);
+  background: transparent !important;
+}
+
+.VPHomeHero .image-src {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.VPHomeHero .image-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--uc-hero-silhouette);
+  -webkit-mask-image: url('./assets/manhattan-cafe-silhouette.png');
+  mask-image: url('./assets/manhattan-cafe-silhouette.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  pointer-events: none;
+}
+
+.VPHero .name,
+.VPHero .text {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.VPHero .tagline {
+  font-weight: 400;
+  max-width: 36rem;
+}
+
+.VPHero .actions {
+  gap: 12px;
+}
+
+.VPButton {
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  transition:
+    color 160ms var(--uc-ease),
+    border-color 160ms var(--uc-ease),
+    background-color 160ms var(--uc-ease),
+    transform 120ms var(--uc-ease) !important;
+}
+
+.VPButton:active {
+  transform: scale(0.98);
+}
+
+.VPButton.medium {
+  padding: 0 20px !important;
+  line-height: 44px !important;
+}
+
+.VPButton.big {
+  padding: 0 24px !important;
+  line-height: 48px !important;
+  border-radius: 12px !important;
+}
+
+/* Feature cards: quieter hairline + banner thumbs from uma.guide */
+.VPHomeFeatures .VPFeature {
+  background-color: transparent !important;
+  border: 1px solid color-mix(in srgb, var(--vp-c-text-1) 8%, transparent) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    border-color 160ms var(--uc-ease),
+    background-color 160ms var(--uc-ease);
+}
+
+.VPHomeFeatures .VPFeature.link:hover {
+  border-color: color-mix(in srgb, var(--uc-accent) 55%, transparent) !important;
+  background-color: var(--vp-c-bg-soft) !important;
+}
+
+.VPHomeFeatures .VPFeature .box {
+  padding: 0 !important;
+}
+
+.VPHomeFeatures .VPFeature .box > .VPImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+  background: color-mix(in srgb, var(--vp-c-bg) 65%, black);
+  margin: 0 !important;
+  border-bottom: 1px solid color-mix(in srgb, var(--uc-accent) 40%, transparent);
+}
+
+.VPHomeFeatures .VPFeature .title {
+  margin: 16px 20px 0;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+}
+
+.VPHomeFeatures .VPFeature .uc-feature-tag {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--uc-accent);
+}
+
+.VPHomeFeatures .VPFeature .details {
+  margin: 8px 20px 20px;
+  color: var(--vp-c-text-2);
+  font-weight: 400;
+}
+
+/* Equal-width feature cards (default VitePress grid-3) */
+
+/* One short entrance — main hero block only */
+@keyframes uc-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPHomeHero .main {
+  animation: uc-rise 420ms var(--uc-ease) both;
 }
 
 .upstream-callout {
