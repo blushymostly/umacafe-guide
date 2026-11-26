@@ -5,7 +5,10 @@ export type SupportCardIndexEntry = {
   id: number
   charaId: number
   charaName: string
+  /** English proper name for UI */
+  enName: string
   title: string
+  enTitle: string
   rarity: number
   rarityDisplay: string
   type: number
@@ -13,7 +16,14 @@ export type SupportCardIndexEntry = {
 }
 
 export type SupportCardDetail = SupportCardIndexEntry & {
-  effects: { name: string; init: number | null; lv50: number | null; lv45: number | null; lv35: number | null; lv15: number | null }[]
+  effects: {
+    name: string
+    init: number | null
+    lv50: number | null
+    lv45: number | null
+    lv35: number | null
+    lv15: number | null
+  }[]
   skillHints: { skillId: number; skillName: string; level?: number }[]
   uniqueEffect: Record<string, unknown> | null
   art: string
@@ -24,6 +34,10 @@ export const supportCardsById = byIdJson as Record<string, SupportCardDetail>
 
 export function findSupportCard(id: number | string): SupportCardDetail | undefined {
   return supportCardsById[String(id)]
+}
+
+export function displayCardName(card: { enName?: string; charaName: string }): string {
+  return card.enName || card.charaName
 }
 
 export function typeIconPath(typeName: string): string {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { findSupportCard, typeIconPath } from '../../../data/supportCards'
+import { displayCardName, findSupportCard, typeIconPath } from '../../../data/supportCards'
 import ChipTooltip from './ChipTooltip.vue'
 
 const props = defineProps<{ id: number | string; label?: string }>()
@@ -29,16 +29,18 @@ function hide() {
     @blur="hide"
   >
     <img v-if="card" :src="typeIconPath(card.typeName)" class="chip-inline-icon" alt="" />
-    <slot>{{ label ?? card?.charaName ?? id }}</slot>
+    <slot>{{ label ?? (card ? displayCardName(card) : id) }}</slot>
     <ChipTooltip ref="tip" :open="open">
       <template v-if="card">
-        <strong>{{ label ?? card.charaName }}</strong>
-        <div class="chip-meta">{{ card.rarityDisplay }} {{ card.typeName }} · {{ card.title }}</div>
+        <strong>{{ label ?? displayCardName(card) }}</strong>
+        <div class="chip-meta">
+          {{ card.rarityDisplay }} {{ card.typeName }} · {{ card.enTitle || card.title }}
+        </div>
         <ul v-if="card.effects?.length" class="chip-effects">
           <li v-for="(e, i) in card.effects.slice(0, 6)" :key="i">{{ e.name }}</li>
         </ul>
         <div v-if="card.art" class="chip-art-wrap">
-          <img :src="card.art" class="chip-art" :alt="card.charaName" />
+          <img :src="card.art" class="chip-art" :alt="displayCardName(card)" />
         </div>
       </template>
     </ChipTooltip>

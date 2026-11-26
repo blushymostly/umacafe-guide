@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { withBase } from 'vitepress'
-import { findSupportCard, typeIconPath } from '../../../data/supportCards'
+import { displayCardName, findSupportCard, typeIconPath } from '../../../data/supportCards'
 
 const props = defineProps<{
   title?: string
@@ -32,10 +32,10 @@ function cardHref(id: number) {
         class="deck-showcase__card"
         :href="cardHref(card!.id)"
       >
-        <img :src="card!.art" :alt="card!.charaName" class="deck-showcase__art" loading="lazy" />
+        <img :src="card!.art" :alt="displayCardName(card!)" class="deck-showcase__art" loading="lazy" />
         <div class="deck-showcase__caption">
           <img :src="typeIconPath(card!.typeName)" class="chip-inline-icon" alt="" />
-          <span>{{ card!.charaName }}</span>
+          <span>{{ displayCardName(card!) }}</span>
         </div>
       </a>
     </div>
