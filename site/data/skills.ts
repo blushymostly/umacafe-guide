@@ -1,5 +1,6 @@
 import skillsByIdJson from './skills-by-id.json'
 import skillsByNameJson from './skills-by-name.json'
+import { publicAsset } from './publicAsset'
 
 export type SkillEntry = {
   id: string
@@ -111,5 +112,5 @@ export function findSkill(nameOrId: string): SkillEntry | undefined {
 
 export function skillIconSrc(skill: SkillEntry | undefined): string | null {
   if (!skill?.iconId) return null
-  return `/icon/skill/utx_ico_skill_${skill.iconId}.webp`
+  return publicAsset(`/icon/skill/utx_ico_skill_${skill.iconId}.webp`)
 }
