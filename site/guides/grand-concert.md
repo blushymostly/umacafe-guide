@@ -243,12 +243,9 @@ Skill Hints и Energy Techniques доступны **всегда**.
   <img src="/img/guides/article/grand_concert/gc_ui_songs.webp" alt="Songs UI в Grand Concert Shop" />
 </div>
 
-У Songs два бонуса:
+В отличии от техник, Песни имеют два типа бонусов: <TermChip name="Mastery Bonus" />, который вы получаете сразу при изучении песни и <TermChip name="Concert Bonus" />, который применяется после вашего следующего концерта и остается до конца карьеры.
 
-- <TermChip name="Mastery Bonus" /> — сразу при изучении Song
-- <TermChip name="Concert Bonus" /> — после следующего Concert, до конца карьеры
-
-#### Concert Bonus
+#### <TermChip name="Concert Bonus" />
 
 | Concert Bonus | Что делает |
 | --- | --- |
@@ -256,7 +253,7 @@ Skill Hints и Energy Techniques доступны **всегда**.
 | Friendship Bonus +X% | Плоский бонус Friendship Training |
 | Support Chain Event Frequency | Чаще chained Events со Support Cards |
 
-#### Mastery Bonus
+#### <TermChip name="Mastery Bonus" />
 
 | Mastery Bonus | Что делает |
 | --- | --- |
@@ -265,44 +262,44 @@ Skill Hints и Energy Techniques доступны **всегда**.
 
 #### Songs с начала карьеры
 
-| Cover | Name | Mastery Bonus | Concert Bonus | Cost | Priority |
+| Обложка | Название | Mastery Bonus | Concert Bonus | Стоимость | Приоритет |
 | :---: | --- | --- | --- | --- | --- |
-| <img src="/img/guides/article/grand_concert/gc_001_believe.webp" class="song-cover" alt="" /> | Believe in Miracles! | Wit Training +1 | Speciality Priority Up +5 | 21 Passion + 21 Composure | High Priority |
-| <img src="/img/guides/article/grand_concert/gc_002_run.webp" class="song-cover" alt="" /> | Run n' Run! | Skill Points +22 | Friendship Bonus +5% | 14 Dance + 16 Visual + 14 Composure | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_003_umadol.webp" class="song-cover" alt="" /> | Full Speed Ahead! Umadol Power☆ | Speed +22 | Friendship Bonus +5% | 32 Dance + 12 Visual | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_004_time.webp" class="song-cover" alt="" /> | Here Comes Our Time | Power +22 | Friendship Bonus +5% | 32 Vocal + 12 Composure | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_005_zero.webp" class="song-cover" alt="" /> | Zero Is Where the Center Stands! | Speed Training +1 | Support Chain Event Frequency +1 | 21 Dance + 21 Visual | Good Value |
-| <img src="/img/guides/article/grand_concert/gc_006_way.webp" class="song-cover" alt="" /> | Go This Way | Power Training +1 | Support Chain Event Frequency +1 | 21 Vocal + 21 Composure | Good Value |
-| <img src="/img/guides/article/grand_concert/gc_007_ring.webp" class="song-cover" alt="" /> | Ring Ring Diary | Stamina Training +1 | Support Chain Event Frequency +1 | 21 Passion + 21 Visual | Low Priority |
-| <img src="/img/guides/article/grand_concert/gc_008_fallin.webp" class="song-cover" alt="" /> | Getaway! Fallin' Love | Guts Training +1 | Support Chain Event Frequency +1 | 21 Dance + 21 Visual | Low Priority |
+| <img src="/img/guides/article/grand_concert/gc_001_believe.webp" class="song-cover" alt="" /> | Believe in Miracles! | Wit Training +1 | Speciality Priority Up +5 | 21 Passion + 21 Composure | Высокий приоритет |
+| <img src="/img/guides/article/grand_concert/gc_002_run.webp" class="song-cover" alt="" /> | Run n' Run! | Skill Points +22 | Friendship Bonus +5% | 14 Dance + 16 Visual + 14 Composure | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_003_umadol.webp" class="song-cover" alt="" /> | Full Speed Ahead! Umadol Power☆ | Speed +22 | Friendship Bonus +5% | 32 Dance + 12 Visual | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_004_time.webp" class="song-cover" alt="" /> | Here Comes Our Time | Power +22 | Friendship Bonus +5% | 32 Vocal + 12 Composure | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_005_zero.webp" class="song-cover" alt="" /> | Zero Is Where the Center Stands! | Speed Training +1 | Support Chain Event Frequency +1 | 21 Dance + 21 Visual | Хорошая покупка |
+| <img src="/img/guides/article/grand_concert/gc_006_way.webp" class="song-cover" alt="" /> | Go This Way | Power Training +1 | Support Chain Event Frequency +1 | 21 Vocal + 21 Composure | Хорошая покупка |
+| <img src="/img/guides/article/grand_concert/gc_007_ring.webp" class="song-cover" alt="" /> | Ring Ring Diary | Stamina Training +1 | Support Chain Event Frequency +1 | 21 Passion + 21 Visual | Низкий приоритет |
+| <img src="/img/guides/article/grand_concert/gc_008_fallin.webp" class="song-cover" alt="" /> | Getaway! Fallin' Love | Guts Training +1 | Support Chain Event Frequency +1 | 21 Dance + 21 Visual | Низкий приоритет |
 
 #### После первого Concert
 
-| Cover | Name | Mastery Bonus | Concert Bonus | Cost | Priority |
+| Cover | Name | Mastery Bonus | Concert Bonus | Cost | Приоритет |
 | :---: | --- | --- | --- | --- | --- |
-| <img src="/img/guides/article/grand_concert/gc_009_dream.webp" class="song-cover" alt="" /> | Run for Our Dream! | Skill Point Bonus +2 | Speciality Priority Up +5 | 21 Passion + 21 Visual | High Priority |
-| <img src="/img/guides/article/grand_concert/gc_010_bluebird.webp" class="song-cover" alt="" /> | Our Blue Bird Days | Speed Training +2 | Speciality Priority Up +5 | 21 Dance + 42 Visual | High Priority |
-| <img src="/img/guides/article/grand_concert/gc_011_anone.webp" class="song-cover" alt="" /> | Hey, Guess What! | Guts Training +2 | Speciality Priority Up +5 | 42 Dance + 21 Visual | Low Priority |
+| <img src="/img/guides/article/grand_concert/gc_009_dream.webp" class="song-cover" alt="" /> | Run for Our Dream! | Skill Point Bonus +2 | Speciality Priority Up +5 | 21 Passion + 21 Visual | Высокий приоритет |
+| <img src="/img/guides/article/grand_concert/gc_010_bluebird.webp" class="song-cover" alt="" /> | Our Blue Bird Days | Speed Training +2 | Speciality Priority Up +5 | 21 Dance + 42 Visual | Высокий приоритет |
+| <img src="/img/guides/article/grand_concert/gc_011_anone.webp" class="song-cover" alt="" /> | Hey, Guess What! | Guts Training +2 | Speciality Priority Up +5 | 42 Dance + 21 Visual | Низкий приоритет |
 
 #### После второго Concert
 
-| Cover | Name | Mastery Bonus | Concert Bonus | Cost | Priority |
+| Cover | Name | Mastery Bonus | Concert Bonus | Cost | Приоритет |
 | :---: | --- | --- | --- | --- | --- |
-| <img src="/img/guides/article/grand_concert/gc_012_shine.webp" class="song-cover" alt="" /> | Grow Up and Shine! | Skill Point Bonus +3 | Support Chain Event Frequency +1 | 21 Dance + 21 Vocal + 21 Composure | High Priority |
-| <img src="/img/guides/article/grand_concert/gc_013_seven.webp" class="song-cover" alt="" /> | Seven Colors Scenery | Power Training +2 | Speciality Priority Up +5 | 21 Vocal + 42 Composure | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_014_sunbeam.webp" class="song-cover" alt="" /> | Sunbeam Cheer | Wit Training +2 | Support Chain Event Frequency +1 | 42 Passion + 21 Composure | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_015_sunny.webp" class="song-cover" alt="" /> | Hoppity Sunny Days♪ | Stamina Training +2 | Speciality Priority Up +5 | 42 Passion + 21 Vocal | Low Priority |
+| <img src="/img/guides/article/grand_concert/gc_012_shine.webp" class="song-cover" alt="" /> | Grow Up and Shine! | Skill Point Bonus +3 | Support Chain Event Frequency +1 | 21 Dance + 21 Vocal + 21 Composure | Высокий приоритет |
+| <img src="/img/guides/article/grand_concert/gc_013_seven.webp" class="song-cover" alt="" /> | Seven Colors Scenery | Power Training +2 | Speciality Priority Up +5 | 21 Vocal + 42 Composure | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_014_sunbeam.webp" class="song-cover" alt="" /> | Sunbeam Cheer | Wit Training +2 | Support Chain Event Frequency +1 | 42 Passion + 21 Composure | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_015_sunny.webp" class="song-cover" alt="" /> | Hoppity Sunny Days♪ | Stamina Training +2 | Speciality Priority Up +5 | 42 Passion + 21 Vocal | Низкий приоритет |
 
 #### После третьего Concert
 
-| Cover | Name | Mastery Bonus | Concert Bonus | Cost | Priority |
+| Cover | Name | Mastery Bonus | Concert Bonus | Cost | Приоритет |
 | :---: | --- | --- | --- | --- | --- |
-| <img src="/img/guides/article/grand_concert/gc_016_treasure.webp" class="song-cover" alt="" /> | Precious Treasure Box | Speed +26 | Friendship Bonus +10% | 42 Dance + 26 Visual | High Priority |
-| <img src="/img/guides/article/grand_concert/gc_017_fanfare.webp" class="song-cover" alt="" /> | Fanfare for the Future! | Guts +26 | Friendship Bonus +10% | 26 Dance + 42 Visual | High Priority |
-| <img src="/img/guides/article/grand_concert/gc_018_present.webp" class="song-cover" alt="" /> | Present March♪ | Power +22 | Friendship Bonus +5% | 22 Vocal + 22 Composure | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_019_dreamsky.webp" class="song-cover" alt="" /> | Dream Sky | Wit +22 | Friendship Bonus +5% | 22 Passion + 22 Composure | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_020_world.webp" class="song-cover" alt="" /> | The World's at Our Whim | Stamina +22 | Friendship Bonus +5% | 32 Passion + 12 Vocal | Great Value |
-| <img src="/img/guides/article/grand_concert/gc_021_spring.webp" class="song-cover" alt="" /> | Sky-Blue Spring | Guts +22 | Friendship Bonus +5% | 12 Dance + 32 Visual | Great Value |
+| <img src="/img/guides/article/grand_concert/gc_016_treasure.webp" class="song-cover" alt="" /> | Precious Treasure Box | Speed +26 | Friendship Bonus +10% | 42 Dance + 26 Visual | Высокий приоритет |
+| <img src="/img/guides/article/grand_concert/gc_017_fanfare.webp" class="song-cover" alt="" /> | Fanfare for the Future! | Guts +26 | Friendship Bonus +10% | 26 Dance + 42 Visual | Высокий приоритет |
+| <img src="/img/guides/article/grand_concert/gc_018_present.webp" class="song-cover" alt="" /> | Present March♪ | Power +22 | Friendship Bonus +5% | 22 Vocal + 22 Composure | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_019_dreamsky.webp" class="song-cover" alt="" /> | Dream Sky | Wit +22 | Friendship Bonus +5% | 22 Passion + 22 Composure | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_020_world.webp" class="song-cover" alt="" /> | The World's at Our Whim | Stamina +22 | Friendship Bonus +5% | 32 Passion + 12 Vocal | Отличная покупка |
+| <img src="/img/guides/article/grand_concert/gc_021_spring.webp" class="song-cover" alt="" /> | Sky-Blue Spring | Guts +22 | Friendship Bonus +5% | 12 Dance + 32 Visual | Отличная покупка |
 
 #### Специальные Songs (по таймингу карьеры)
 
@@ -312,12 +309,12 @@ Skill Hints и Energy Techniques доступны **всегда**.
 | <img src="/img/guides/article/grand_concert/gc_023_girlslegend.webp" class="song-cover" alt="" /> | Girls' Legend U | All Stats +10 | Friendship Bonus +10% | After Senior Year Early December |
 
 ::: info
-Для **GIRLS' LEGEND U** целитесь в **≥18 Songs** до неё: откроется особая версия песни и золотой Scenario Skill <SkillChip name="I Wanna Win with You" id="i-wanna-win-with-you" />.
+Для **GIRLS' LEGEND U** целитесь в **≥18 Songs** до неё: откроется особая версия песни и золотой навык сценария <SkillChip name="I Wanna Win with You" id="i-wanna-win-with-you" />.
 :::
 
 ### Song Saving
 
-<TermChip name="Song Saving" /> — когда выбор Songs уже открыт, но вы **не** покупаете Song до следующего Concert. Shop не меняется: Song можно взять после Concert. Это засчитывается в прогрессию к следующему Song (см. Gameplay). Минус: <TermChip name="Concert Bonus" /> сдвигается ещё на один Concert. Обычно так делают, если текущий выбор Songs слабый — быстрее добраться до следующего пула.
+<TermChip name="Song Saving" /> можно сделать, когда вы добрались до возможности купить песню, но не покупаете её до следующего концерта. Она засчитается в качестве урока для прогрессии к следующей песни, но есть минусЮ который состоит в том, что <TermChip name="Concert Bonus" /> сдвигается ещё на один концерт. Обычно так делают, если текущий выбор песен слабый, чтобы быстрее добраться до следующего пула.
 
 #### Пример Song Saving
 
@@ -325,13 +322,13 @@ Skill Hints и Energy Techniques доступны **всегда**.
 
 ### Concerts
 
-Songs поднимают Hype Level. Нужно **три Songs** перед каждым Concert для Great Success: **+10** ко всем статам (меньше Songs → только **+3**).
+Песни поднимают уровень хайпа. Нужно выучить **три песни** перед каждым концертом для получения Great Success: **+10** ко всем статам (если песен было меньше, то получаем только **+3**).
 
-Дополнительно за Lessons между Concerts дают Skill Points: Song = **+25 SP**, Technique = **+5 SP**.
+К тому же каждый урок, который вы изучили между концертами дает Skill Point'ы: Песня = **+25 SP**, техника = **+5 SP**.
 
 Всего пять Concerts:
 
-| Concert | Turn |
+| Концерт | Ход |
 | --- | --- |
 | 1st Concert | Junior Year Late December |
 | 2nd Concert | Classic Year Late June |
@@ -340,36 +337,36 @@ Songs поднимают Hype Level. Нужно **три Songs** перед ка
 | Grand Concert (5th) | Senior Year Late December |
 
 ::: info
-Каждый Concert также поднимает кап **каждого** типа Performance Points на **+50**.
+Каждый Concert также поднимает максимальное количество очков **каждого** типа Performance Points на **+50**.
 :::
 
 ## Gameplay
 
-Цикл Grand Concert: набирать Points через Training → тратить на Techniques и Songs.
+Цикл Grand Concert состоит в набирании очков Performance через тренировки и их трата на техники и песни.
 
-Главное — понимать, сколько Techniques нужно до следующего Song, и что счётчик **сбрасывается после Concert**.
+Самый важный аспект заключается в понимании сколько техник вам нужно для следующей песни и то, что это количество сбрасывается после каждого концерта.
 
-Поскольку Light Hello может дать +20 Points, тренируйтесь с ней в приоритете.
+Поскольку <CharacterChip name="Light Hello" /> может дать +20 очков её тренировки всегда в приоритете.
 
 ::: warning
-Races **не** дают Points. Лишние заезды не делайте, кроме случаев, когда нужен Secret Event вашей Uma.
+Поскольку гонки **не** дают очки рекомендуется не делать дополнительные гонки, если они не нужны для открытия секретного эвента вашей умы!
 :::
 
 ### Junior Year
 
-- **Максимизируйте Friendship Bonds.** Friendship Training даёт больше Points — раскачивайте bonds как можно быстрее.
-- **Цельтесь в Mastery Stat Bonus Songs.** Concert Bonus включается только после Concert, а Mastery Training Bonus работает сразу. Friendship Bonus Songs берите ближе к Concert, если можно. Friendship Bonus отлично стакается по карьере. На первый Concert — минимум **три Songs** для Great Success.
+- **Максимизируйте Friendship Bonds.** Friendship Training даёт больше Points — раскачивайте дружбу как можно быстрее.
+- **Цельтесь в Mastery Stat Bonus Songs.** Concert Bonus включается только после концерта, а Mastery Training Bonus работает сразу. Friendship Bonus Songs берите ближе к концерту, если можно. Friendship Bonus отлично стакается по карьере. На первый Concert — минимум **три Songs** для Great Success.
 
 ### Classic Year
 
-- **Skill Point Bonus.** Songs «Run for Our Dream!» и «Grow Up and Shine!» поднимают прирост SP на всю оставшуюся карьеру — берите сразу, как появятся.
-- **Покупки Songs.** На пятый Song нужно пять Techniques. Обычно останавливаются на **четырёх Songs** за цикл и копят Points на следующий.
+- **Обязательно покупайте Skill Point Bonus.** Песни «Run for Our Dream!» и «Grow Up and Shine!» поднимают прирост SP на всю оставшуюся карьеру — берите сразу, как появятся.
+- **Покупки песен.** На пятую песню нужно пять техник. Обычно останавливаются на **четырёх песнях** за цикл и копят очки на следующий.
 
 ### Senior Year
 
-- **≥18 Songs** до GIRLS' LEGEND U → особая версия песни и <SkillChip name="I Wanna Win with You" id="i-wanna-win-with-you" />. Иначе получите белый <SkillChip name="Halfway to a Dream" id="halfway-to-a-dream" /> (speed + accel в случайной точке второй половины при ≤6-м месте).
-- **Умные покупки перед Grand Concert.** Между Song с Mastery Stat Bonus и Song с Concert Friendship Bonus берите **Stat Bonus** первым: Concert Bonus после Grand Concert работает только на последние три тренировочных хода.
-- **Pivot на 21 Song.** При 21 Song до Grand Concert открывается Technique Lesson поверх оставшихся Song Lessons. Если Songs слабые — иногда выгоднее спамить Techniques ради SP после Grand Concert.
+- **Цельтесть к получению как минимум 18 песен** перед получением GIRLS' LEGEND U, чтобы получить особую версию песни и <SkillChip name="I Wanna Win with You" id="i-wanna-win-with-you" />. Иначе получите белый <SkillChip name="Halfway to a Dream" id="halfway-to-a-dream" /> (speed + accel в случайной точке второй половины при ≤6-м месте).
+- **Умные покупки перед Grand Concert.** Если у вас выбор между песнями с Mastery Stat Bonus и Friendship Bonus после концерта берите **бонус к характеристикам в первую очередь** первым: Concert Bonus после Grand Concert работает только на последние три тренировочных хода.
+- **Цельтесь на 21 песню.** При 21 Song до Grand Concert открывается Technique Lesson поверх оставшихся уроков песен. Если песни слабые — иногда выгоднее спамить техники ради максимизирования SP после Grand Concert.
 
 ## Scenario Rewards
 
@@ -403,9 +400,3 @@ Scenario Spark называется **Grand Concert Scenario** и повышае
 | Senior year, Early April | Turf: 70 000 Fans · Dirt: 60 000 Fans · и 60 (green) bond с Akikawa |
 | Senior year, Early December | Turf: 120 000 Fans · Dirt: 80 000 Fans |
 
-## Что смотреть на uma.guide
-
-- [Grand Concert на uma.guide](https://uma.guide/guides/grand-concert) (полный EN-оригинал)
-- [Song Calculator](https://uma.guide/grand-live-calculator/)
-- Character pages / Secret Events Trainee
-- Deck-builder / compare и прочие Tools
